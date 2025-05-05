@@ -14,7 +14,7 @@ public class PessoaTeste {
         pessoa.getPeso();
         pessoa.setSalario(8957.89);
         pessoa.getSalario();
-        pessoa.bonusSalarial();
+        pessoa.calcularBonus();
         pessoa.gerarRelatório();
     }
 }

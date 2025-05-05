@@ -38,28 +38,28 @@ public class Pessoa{
         this.salario = salario;
     }
 
-    public String gerarRelatório(){
+public String gerarRelatório(){
         String relatorio;
         relatorio = "Nome: " + nome +
                     "\n Idade: " + idade +
                     "\n Altura: " + altura +
                     "\n Peso: " + peso +
                     "\n IMC: " + (peso/(altura*altura)) +
-                    "\n Salario:" + salario;
+                    "\n Salario:" + salario + calcularBonus();
         return relatorio;
     }
 
-    public double bonusSalarial(){
+    public double calcularBonus(){
         double bonusSalarial;
-        if(idade < 22){
-            bonusSalarial = salario + (salario * 0.25);
-    }else if(idade >=22 && idade <=65){
-            bonusSalarial = (salario * 0.6);
-    }else if(idade > 65){
-            bonusSalarial = (salario * 0.9);
+        if(idade < 25){
+            bonusSalarial = salario + (salario * 0.2);
+    }else if(idade >=25 && idade <=58){
+            bonusSalarial = (salario * 0.5);
+    }else if(idade > 58){
+            bonusSalarial = (salario * 0.8);
     }else{
             bonusSalarial = 0;
     }
         return bonusSalarial;
-    }
+}
 }
