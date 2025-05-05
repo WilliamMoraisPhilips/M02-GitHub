@@ -56,7 +56,7 @@ public String gerarRelatório(){
     }else if(idade >=25 && idade <=58){
             bonusSalarial = (salario * 0.5);
     }else if(idade > 58){
-            bonusSalarial = (salario * 0.5);
+            bonusSalarial = (salario * 0.8);
     }else{
             bonusSalarial = 0;
     }
